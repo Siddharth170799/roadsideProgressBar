@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import ProgressBar from "./ProgressBar";
+import { useEffect, useState } from "react";
+import Body from "./Body2";
 
 function App() {
+  // const [value, setValue] = useState(0);
+  // const [success, setSuccess] = useState(false);
+
+  // useEffect(() => {
+  //   setInterval(function () {
+  //     setValue((value) => value + 1);
+  //   }, 100);
+  // }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Body/>
+      {/* <div>ProgressBar</div>
+      <ProgressBar value={value} onComplete={() => setSuccess(true)} />
+      {success == true ? <div>Completed</div> : <div>loading...</div>} */}
     </div>
   );
 }
